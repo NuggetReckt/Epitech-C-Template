@@ -1,0 +1,6 @@
+*.o
+*.a
+*.so
+*.out
+coding-style-reports.log
+<bin_name>
