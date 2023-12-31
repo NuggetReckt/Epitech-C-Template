@@ -8,7 +8,7 @@
 #ifndef CONSTS_H
     #define CONSTS_H
 
-const int ERR = 84;
-const int SUCCESS = 0;
+static const int ERR = 84;
+static const int SUCCESS = 0;
 
 #endif /* !CONSTS_H */

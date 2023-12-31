@@ -1,5 +1,5 @@
 /*
-** EPITECH PROJECT, 2023
+** EPITECH PROJECT, <year>
 ** <project_name>
 ** File description:
 ** <desc>
