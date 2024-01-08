@@ -1,6 +1,6 @@
 ##
-## EPITECH PROJECT, 2023
-## Day10 - Task01
+## EPITECH PROJECT, 2024
+## Libmy
 ## File description:
 ## Compiles our lib
 ##

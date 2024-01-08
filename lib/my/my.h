@@ -1,6 +1,6 @@
 /*
-** EPITECH PROJECT, 2023
-** Day09 - Task02
+** EPITECH PROJECT, 2024
+** Libmy
 ** File description:
 ** Contains prototypes of all the function of libmy
 */

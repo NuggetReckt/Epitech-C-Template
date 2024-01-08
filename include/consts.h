@@ -1,6 +1,6 @@
 /*
-** EPITECH PROJECT, 2023
-** Organized
+** EPITECH PROJECT, <year>
+** <project_name>
 ** File description:
 ** Constants header file
 */

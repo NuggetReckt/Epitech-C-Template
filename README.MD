@@ -2,6 +2,7 @@
 
 ## Getting started:
 - To get started, replace the `<bin_name>` placeholders by the name of your program into the `Makefile` & `.gitignore` files.
+- Replace the others `<year>`, `<project_name>`, `<desc>` placeholders in the sources files (`.c` & `.h`)
 
 ## Building with make:
 The given Makefile provides multiple rules :
