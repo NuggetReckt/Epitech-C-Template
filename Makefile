@@ -25,7 +25,7 @@ LIB_PATH	=	./lib/my/
 
 CPPFLAGS 	=	-Iinclude
 
-.PHONY: all m1 clean debug fclean re
+.PHONY: all clean debug fclean re
 
 all: 	$(NAME)
 
