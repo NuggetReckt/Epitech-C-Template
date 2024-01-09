@@ -10,6 +10,7 @@ SRC	=	my_putchar.c	\
 		my_put_nbr.c	\
 		my_swap.c	\
 		my_putstr.c	\
+		my_puterr.c	\
 		my_strlen.c	\
 		my_getnbr.c	\
 		my_sort_int_array.c	\
@@ -39,7 +40,7 @@ SRC	=	my_putchar.c	\
 		my_show_word_array.c	\
 		my_strdup.c	\
 		to_count_from.c	\
-		my_putfloat.c	\
+		my_putfloat.c
 
 NAME	=	libmy.a
 
@@ -47,7 +48,7 @@ OBJ	=	$(SRC:.c=.o)	\
 		printf_main.o	\
 		printf_utils.o	\
 		printf_utils2.o	\
-		printf_utils_e.o	\
+		printf_utils_e.o
 
 all:	$(NAME)
 

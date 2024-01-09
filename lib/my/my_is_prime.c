@@ -5,20 +5,21 @@
 ** Returns 1 if number is prime, 0 if not
 */
 
+#include <stdbool.h>
 #include "my.h"
 
 int my_is_prime(int nb)
 {
-    int result = 1;
+    bool is_prime = true;
 
     for (int i = 2; i <= nb / 2; i++) {
         if (nb % i == 0) {
-            result = 0;
+            is_prime = false;
             break;
         }
     }
     if (nb == 1) {
-        return 0;
+        return false;
     }
-    return result;
+    return is_prime;
 }

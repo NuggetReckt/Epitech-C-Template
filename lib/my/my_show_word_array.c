@@ -5,16 +5,13 @@
 ** Displays, word per word all the content of an array
 */
 
+#include <stddef.h>
 #include "my.h"
 
-int my_show_word_array(char *const *tab)
+void my_show_word_array(char *const *tab)
 {
-    int i = 0;
-
-    while (tab[i] != 0) {
+    for (int i = 0; tab[i] != NULL; i++) {
         my_putstr(tab[i]);
         my_putstr("\n");
-        i++;
     }
-    return 0;
 }
