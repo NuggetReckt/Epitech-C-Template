@@ -40,25 +40,22 @@ SRC	=	my_putchar.c	\
 		my_show_word_array.c	\
 		my_strdup.c	\
 		to_count_from.c	\
-		my_putfloat.c
+		my_putfloat.c	\
+		my_printf/printf_main.c	\
+		my_printf/printf_utils.c	\
+		my_printf/printf_utils2.c	\
+		my_printf/printf_utils_e.c
 
 NAME	=	libmy.a
 
-OBJ	=	$(SRC:.c=.o)	\
-		printf_main.o	\
-		printf_utils.o	\
-		printf_utils2.o	\
-		printf_utils_e.o
+OBJ	=	$(SRC:.c=.o)
 
 all:	$(NAME)
 
-$(NAME): build_printf $(OBJ)
+$(NAME):	$(OBJ)
 	ar rc $(NAME) $(OBJ)
 	cp $(NAME) ../
 	cp my.h ../../include/
-
-build_printf:
-	@(cd my_printf/ && $(MAKE))
 
 clean:
 	rm -f $(OBJ)
