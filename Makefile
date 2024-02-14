@@ -7,7 +7,7 @@
 
 CC	=	gcc
 
-NAME	=	test
+NAME	=	<bin_name>
 
 SRC 	=	src/main.c
 

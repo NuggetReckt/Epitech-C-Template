@@ -23,7 +23,7 @@ SRC	=	my_putchar.c	\
 		my_strncpy.c	\
 		my_revstr.c	\
 		my_strstr.c	\
-		my_strcmp.c	\
+		my_str_equals.c	\
 		my_strncmp.c	\
 		my_strupcase.c	\
 		my_strlowcase.c	\

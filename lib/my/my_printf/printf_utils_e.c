@@ -41,23 +41,6 @@ int condition(float flot, int i)
     return i;
 }
 
-int put_nbr(int nb)
-{
-    if (nb < 0) {
-        my_putchar('-');
-        nb = nb * -1;
-    }
-    if (nb > 9) {
-        put_nbr(nb / 10);
-        my_putchar((nb % 10) + '0');
-    } else {
-        my_putchar(nb + '0');
-    }
-    if (nb > 2147483647 || nb < -2147483647) {
-        return 0;
-    }
-}
-
 void display_e(char c)
 {
     if (c == 'E') {
@@ -83,5 +66,5 @@ void percent_e(float flt, char c)
     if (condition(flot, i) <= 9.999999) {
         my_putchar('0');
     }
-    put_nbr(condition(flot, i));
+    my_put_nbr(condition(flot, i));
 }

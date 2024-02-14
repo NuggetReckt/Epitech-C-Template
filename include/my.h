@@ -34,7 +34,7 @@ char *my_revstr(char *str);
 char *my_strstr(char *str, char const *to_find);
 bool my_char_equals(char c1, char c2);
 int to_count_from(char *str, char const *to_find);
-int my_strcmp(char const *s1, char const *s2);
+int my_str_equals(char const *s1, char const *s2);
 int my_strncmp(char const *s1, char const *s2, int n);
 char *my_strupcase(char *str);
 char *my_strlowcase(char *str);
