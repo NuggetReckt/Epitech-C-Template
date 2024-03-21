@@ -13,15 +13,16 @@ SRC 	=	src/main.c
 
 OBJ	=	$(SRC:.c=.o)
 
-DEBUG	=	-Wall	\
-			-Wextra	\
-			-g3
+DEBUG	=	-g3
 
 LDFLAGS	=	-L./lib
 
 LDLIBS	=	-lmy
 
 LIB_PATH	=	./lib/my/
+
+CFLAGS	=	-Wall	\
+			-Wextra
 
 CPPFLAGS 	=	-Iinclude
 
@@ -31,11 +32,11 @@ all: 	$(NAME)
 
 $(NAME):	$(OBJ)
 	$(MAKE) -C $(LIB_PATH)
-	$(CC) -o $(NAME) $(OBJ) $(LDFLAGS) $(LDLIBS) $(CPPFLAGS)
+	$(CC) $(CFLAGS) -o $(NAME) $(OBJ) $(LDFLAGS) $(LDLIBS) $(CPPFLAGS)
 
 debug: fclean	$(OBJ)
 	$(MAKE) -C $(LIB_PATH)
-	$(CC) -o $(NAME) $(OBJ) $(LDFLAGS) $(LDLIBS) $(CPPFLAGS) $(DEBUG)
+	$(CC) $(CFLAGS) $(DEBUG) -o $(NAME) $(OBJ) $(LDFLAGS) $(LDLIBS) $(CPPFLAGS)
 
 clean:
 	$(MAKE) clean -C $(LIB_PATH)
